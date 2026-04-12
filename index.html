@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IPL Jerseys</title>
+
+<!-- Google Ads Tag -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'AW-XXXXXXXXX');
+</script>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #fff;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url('hero.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  padding: 16px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 320px;
+}
+
+.hero h1 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.hero p {
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+/* BUTTON */
+.btn {
+  width: 100%;
+  height: 58px;
+  background: #25D366;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+.btn img {
+  width: 22px;
+}
+
+/* SECTION */
+.section {
+  padding: 28px 16px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.section p {
+  font-size: 13px;
+  margin: 6px 0;
+  color: #444;
+}
+
+.product {
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+/* STICKY BUTTON */
+.sticky {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  z-index: 999;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  .hero h1 { font-size: 24px; }
+  .hero p { font-size: 15px; }
+  .btn { height: 60px; font-size: 18px; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero" onclick="goWhatsApp()">
+  <div class="hero-content">
+    <h1>IPL Match jerseys</h1>
+    <p>All Teams • Fast Delivery • COD Available</p>
+
+    <a href="javascript:void(0)"
+       class="btn"
+       onclick="event.stopPropagation(); goWhatsApp();">
+       
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+      Get it on WhatsApp
+    </a>
+  </div>
+</div>
+
+<!-- PRODUCTS -->
+<div class="section">
+  <h2>Popular Teams</h2>
+  <div class="product">Mumbai Indians</div>
+  <div class="product">Chennai Super Kings</div>
+  <div class="product">Royal Challengers Bangalore</div>
+  <div class="product">Kolkata Knight Riders</div>
+</div>
+
+<!-- TRUST -->
+<div class="section">
+  <h2>Why Choose Us</h2>
+  <p>✔ Premium Fabric</p>
+  <p>✔ Cash on Delivery</p>
+  <p>✔ Fast Shipping</p>
+</div>
+
+<!-- URGENCY -->
+<div class="section">
+  <h2>Limited Stock</h2>
+  <p>Order now before your team sells out</p>
+</div>
+
+<!-- STICKY BUTTON -->
+<div class="sticky">
+  <a href="javascript:void(0)"
+     class="btn"
+     onclick="goWhatsApp()">
+     
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+    Get it on WhatsApp
+  </a>
+</div>
+
+<script>
+const waLink = "https://wa.link/yourlink"; // 🔁 replace with your wa.link
+
+function goWhatsApp() {
+
+  if (typeof gtag === 'function') {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-XXXXXXXXX/XXXXXXX',
+      'event_callback': function () {
+        window.location.href = waLink;
+      }
+    });
+
+    // fallback (important)
+    setTimeout(() => {
+      window.location.href = waLink;
+    }, 300);
+
+  } else {
+    window.location.href = waLink;
+  }
+}
+</script>
+
+</body>
+</html>
