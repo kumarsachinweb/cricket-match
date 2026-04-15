@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IPL Jerseys</title>
+<title>Buy IPL Jerseys Online</title>
 
-<!-- Google Ads Tag -->
+<!-- Google Ads -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18037306428"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -15,113 +15,82 @@ gtag('config', 'AW-18037306428');
 </script>
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
 
-body {
-  background: #fff;
-}
+body{background:#fff;color:#111;}
 
 /* HERO */
-.hero {
-  height: 100vh;
-  background: url('hero.jpg') center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #fff;
-  position: relative;
-  padding: 16px;
+.hero{
+  background:url('hero.jpg') center/cover no-repeat;
+  height:90vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:#fff;
+  position:relative;
+  padding:20px;
 }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.65);
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.6);
 }
 
-.hero-content {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  max-width: 320px;
-}
+.hero-content{position:relative;z-index:2;max-width:340px;}
 
-.hero h1 {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 8px;
-}
+.hero h1{font-size:20px;margin-bottom:10px;}
+.hero p{font-size:14px;margin-bottom:20px;}
 
-.hero p {
-  font-size: 13px;
-  margin-bottom: 18px;
-}
-
-/* BUTTON */
-.btn {
-  width: 100%;
-  height: 58px;
-  background: #25D366;
-  color: #fff;
-  border-radius: 50px;
-  font-size: 16px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  text-decoration: none;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
-}
-
-.btn img {
-  width: 22px;
+.btn{
+  width:100%;
+  height:56px;
+  background:#25D366;
+  color:#fff;
+  border-radius:50px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:bold;
+  text-decoration:none;
+  font-size:16px;
 }
 
 /* SECTION */
-.section {
-  padding: 28px 16px;
-  text-align: center;
+.section{padding:25px 16px;text-align:center;}
+.section h2{font-size:16px;margin-bottom:10px;}
+.section p{font-size:13px;margin:6px 0;color:#444;}
+
+/* PRODUCTS */
+.products{display:flex;flex-direction:column;gap:10px;margin-top:10px;}
+.product{
+  border:1px solid #eee;
+  padding:10px;
+  border-radius:10px;
+  font-size:14px;
 }
 
-.section h2 {
-  font-size: 16px;
-  margin-bottom: 10px;
+/* FOOTER */
+.footer{
+  background:#f7f7f7;
+  padding:20px;
+  font-size:12px;
+  color:#555;
+  text-align:center;
 }
 
-.section p {
-  font-size: 13px;
-  margin: 6px 0;
-  color: #444;
+.footer a{color:#000;text-decoration:none;}
+
+/* STICKY */
+.sticky{
+  position:fixed;
+  bottom:10px;
+  left:10px;
+  right:10px;
 }
 
-.product {
-  font-size: 14px;
-  margin: 6px 0;
-}
-
-/* STICKY BUTTON */
-.sticky {
-  position: fixed;
-  bottom: 10px;
-  left: 10px;
-  right: 10px;
-  z-index: 999;
-}
-
-/* DESKTOP */
-@media (min-width: 768px) {
-  .hero h1 { font-size: 24px; }
-  .hero p { font-size: 15px; }
-  .btn { height: 60px; font-size: 18px; }
-}
 </style>
 </head>
 
@@ -130,14 +99,10 @@ body {
 <!-- HERO -->
 <div class="hero" onclick="goWhatsApp()">
   <div class="hero-content">
-    <h1>IPL Match jerseys</h1>
-    <p>All Teams • Fast Delivery • COD Available</p>
+    <h1>Buy IPL Jerseys Online</h1>
+    <p>All Teams Available • Cash on Delivery • Fast Delivery</p>
 
-    <a href="javascript:void(0)"
-       class="btn"
-       onclick="event.stopPropagation(); goWhatsApp();">
-       
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+    <a href="javascript:void(0)" class="btn" onclick="event.stopPropagation();goWhatsApp();">
       Get it on WhatsApp
     </a>
   </div>
@@ -145,62 +110,69 @@ body {
 
 <!-- PRODUCTS -->
 <div class="section">
-  <h2>Popular Teams</h2>
-  <div class="product">Mumbai Indians</div>
-  <div class="product">Chennai Super Kings</div>
-  <div class="product">Royal Challengers Bangalore</div>
-  <div class="product">Kolkata Knight Riders</div>
+  <h2>Available Jerseys</h2>
+  <div class="products">
+    <div class="product">Mumbai Indians Jersey – ₹499</div>
+    <div class="product">Chennai Super Kings – ₹499</div>
+    <div class="product">RCB Jersey – ₹499</div>
+    <div class="product">KKR Jersey – ₹499</div>
+  </div>
 </div>
 
 <!-- TRUST -->
 <div class="section">
   <h2>Why Choose Us</h2>
-  <p>✔ Premium Fabric</p>
-  <p>✔ Cash on Delivery</p>
-  <p>✔ Fast Shipping</p>
+  <p>✔ Premium Quality Fabric</p>
+  <p>✔ Cash on Delivery Available</p>
+  <p>✔ Fast Shipping (3–5 Days)</p>
 </div>
 
-<!-- URGENCY -->
+<!-- BUSINESS INFO -->
 <div class="section">
-  <h2>Limited Stock</h2>
-  <p>Order now before your team sells out</p>
+  <h2>Contact & Business Info</h2>
+  <p>Business Name: Pawan Sports Wear</p>
+  <p>Location: Bihar, India</p>
+  <p>Phone: +91-9142545113</p>
+  <p>Email: pawansportswearbhr@gmail.com</p>
+</div>
+
+<!-- POLICIES -->
+<div class="section">
+  <h2>Policies</h2>
+  <p><a href="/privacy.html">Privacy Policy</a></p>
+  <p><a href="/terms.html">Terms & Conditions</a></p>
+  <p><a href="/refund.html">Refund & Return Policy</a></p>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  © 2026 XYZ Sports Wear. All rights reserved.
 </div>
 
 <!-- STICKY BUTTON -->
 <div class="sticky">
-  <a href="javascript:void(0)"
-     class="btn"
-     onclick="goWhatsApp()">
-     
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+  <a href="javascript:void(0)" class="btn" onclick="goWhatsApp()">
     Get it on WhatsApp
   </a>
 </div>
 
 <script>
-const waLink = "https://wa.link/hkqatn"; // 🔁 replace with your wa.link
+const waLink = "https://wa.link/hkqatn";
 
-function goWhatsApp() {
-
-  if (typeof gtag === 'function') {
-    gtag('event', 'conversion', {
-      'send_to': 'AW-18037306428/fhTvCJvT2I4cELzo7ZhD',
-      'event_callback': function () {
-        window.location.href = waLink;
+function goWhatsApp(){
+  if(typeof gtag==='function'){
+    gtag('event','conversion',{
+      'send_to':'AW-18037306428/fhTvCJvT2I4cELzo7ZhD',
+      'event_callback':function(){
+        window.location.href=waLink;
       }
     });
-
-    // fallback (important)
-    setTimeout(() => {
-      window.location.href = waLink;
-    }, 300);
-
-  } else {
-    window.location.href = waLink;
+    setTimeout(()=>{window.location.href=waLink;},300);
+  }else{
+    window.location.href=waLink;
   }
 }
 </script>
 
 </body>
 </html>
-
